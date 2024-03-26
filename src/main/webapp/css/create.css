@@ -1,0 +1,128 @@
+@media only screen and (max-width: 600px) {
+	.container {
+		overflow: scroll;
+	}
+	.profile {
+		width: 100% !important;
+		height: 100%;
+	}
+}
+
+@import
+	url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+	;
+
+* {
+	/* font-size: 16px; */
+	box-sizing: border-box;
+	font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+body {
+	box-sizing: border-box;
+}
+
+.table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+.table th, .table td {
+	padding: 12px;
+	text-align: center;
+	border: 1px solid black; /* Light Gray Border */
+	color: black;
+}
+
+.table th {
+	background-color: #cdc1ff;
+	/* color: #fff; */
+}
+
+.table tr:hover {
+	background-color: #ecf0f1; /* Light Gray Hover Background */
+}
+
+.formControl {
+	width: 100%;
+	padding: 5px;
+	box-sizing: border-box;
+	/* border: 5px solid #bdc3c7; */ /* Light Gray Border */
+	border: 1px solid black;
+	border-radius: 5px;
+}
+
+.buttonContainer {
+	margin-top: 20px;
+	text-align: right;
+}
+
+.button {
+	padding: 7px 20px;
+	background-color: #cdc1ff;
+	color: black;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	margin-left: 20px;
+	font-weight: 600;
+	font-size: medium;
+}
+
+.button:hover {
+	/* background-color: #2980b9; */
+	color: white;
+}
+
+.table {
+	width: 100vw; /* Set table width to 100% of viewport width */
+	border-collapse: collapse;
+	margin-top: 20px;
+}
+
+.container {
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+* /
+
+ .greyBackground {
+	background-color: #f2f2f2; /* Grey Background */
+	background-color: white;
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Darker Grey Shadow */
+}
+
+.greyBackground:focus {
+	outline: none; /* Remove outline on focus for readonly fields */
+}
+
+.slNo {
+	width: 100px;
+}
+
+.particulars {
+	width: 350px;
+}
+
+.billNo {
+	width: 200px;
+}
+
+#billNo {
+	text-align: right;
+}
+
+.billDate {
+	width: 250px;
+}
+
+#amount {
+	text-align: right;
+}
+
+.successContainer {
+	height: 20px;
+}

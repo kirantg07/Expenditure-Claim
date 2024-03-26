@@ -1,0 +1,139 @@
+@import
+	url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap')
+	;
+
+* {
+	/* font-size: 16px; */
+	box-sizing: border-box;
+	font-family: Poppins, Arial, Helvetica, sans-serif;
+}
+
+#table {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#table th, #table td {
+	padding: 10px !important;
+	text-align: left;
+	border: 1px solid black; /* Light Gray Border */
+	color: black;
+}
+
+#table th {
+	background-color: #cdc1ff;
+	/* padding: 10px !important; */
+	/* color: #fff; */
+}
+
+#table tr:hover {
+	background-color: #ecf0f1; /* Light Gray Hover Background */
+}
+
+/* Form input fields */
+#table input[type="text"], #table input[type="date"], #table textarea,
+	/* #table select, */ #table input[type="file"] {
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+	border: 1px solid #bdc3c7; /* Light Gray Border */
+	border-radius: 5px;
+}
+
+#table textarea {
+	resize: vertical;
+}
+
+div#bContainer {
+	float: right;
+	margin-top: 10px;
+	/*  background-color: #3498db; */
+}
+
+.dateValidationContainer {
+	margin-top: 10px
+}
+
+#ECHeader, #EC {
+	text-align: right !important;
+}
+
+.button {
+	padding: 7px 20px;
+	background-color: #cdc1ff !important;
+	color: black;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	margin-left: 20px;
+	font-weight: 600;
+	font-size: medium;
+}
+
+
+main{
+	margin-top: 20px;
+}
+
+/* Make the table header sticky */
+table#table thead {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #ffffff; /* Background color for the fixed header */
+}
+
+
+/* Make the table body scrollable */
+.tableContainer {
+    height: 600px; /* Adjust this value as needed */
+}
+
+/* Ensure the table layout remains fixed */
+.tableContainer table {
+    table-layout: fixed;
+}
+.TableBody{
+	height: 600px; 
+	overflow-y: auto;
+    position: relative; /* Ensure the table header sticks within this container */
+}
+#nameHeader{
+	width: 200px;
+}
+
+#designationHeader{
+	width: 200px;
+}
+#emailHeader , #emialBody{
+	width: 300px;
+	 white-space: nowrap;  /* Prevent text from wrapping */
+  	 overflow: hidden;  /* Hide overflowed content */
+	 text-overflow: ellipsis;  /* Display ellipsis (...) for overflowed content */
+}
+
+#regionHeader, #regionBody{
+	width: 170px;
+}
+
+#ECHeader , #EC{
+	width: 150px;
+}
+
+#userTypeHeader, #userTypeBody{
+	width: 210px;
+}
+
+#rmHeader, #rmBody{
+	width: 220px;
+}
+
+.rmDropDown{
+	width: 80%;
+}
+.userTypeDropDown{
+	width: 80%;
+}
+
+

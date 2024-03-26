@@ -1,0 +1,383 @@
+/* @charset "ISO-8859-1"; */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    *{
+   /* font-size: 16px; */
+   box-sizing: border-box; 
+    font-family:Poppins, Arial, Helvetica, sans-serif;
+	} 
+	
+   	.container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: #fff; /* White Background */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        margin-top: 20px;
+    }
+    
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        /* margin-top: 20px; */
+    }
+    
+     th {
+        background-color: #cdc1ff;  
+        color: black;
+    }
+    
+      .table td {
+    	padding-top: 1px;
+    	padding-bottom: 1px;
+    }
+    
+     tr:hover {
+        background-color: #ecf0f1; /* Light Gray Hover Background */
+    }
+    
+     .table tr{
+    	 background-color: #ecf0f1;
+    }
+    
+        .formControl {
+        max-width: 150px; /* You can adjust the width as needed */
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    
+    
+     input[type="date"] {
+        padding: 10px;
+        margin-right: 10px;
+    }
+      
+    .table th,
+    .table td {
+    	 border: 1px solid black; /* Set border thickness and color */
+    	 padding: 6px;
+    	 text-align : left;
+    }
+    
+   
+    
+    #nameHeader, #fn{
+    	width: 120px;
+    }
+    
+    #particularsHeader ,#particulars{
+    	width: 180px;
+    }
+    
+    #billNoHeader, #bno{
+    	width: 100px;
+    	text-align: right;
+    }
+    
+   #billDateheader,  #billDate{
+   	width: 120px;
+   } 
+   
+   #claimedDateHeader , #claimedDate{
+   	 	width: 120px;
+   } 
+   
+   #reclaimedDateHeader, #reclaimedDate{
+   		width: 120px;
+   }
+   
+   #claimedAmountHeader ,#amount{
+   		width: 100px;
+   		text-align: right;
+   }
+   
+   #managerRemarksHeader{
+   	width: 150px;
+   }
+    #approvedAmountHeader ,#approvedAmount{
+   		width: 90px;
+   		text-align: right;
+   }
+   #approvedAmountHeader{
+   	width: 105px;
+   }
+   
+   #approvedAmount{
+   		padding: 5px;
+   }
+   
+   #viewBillHeader {
+   	width: 85px;
+   }
+   
+   #viewBill{
+   	color: blue;
+   }
+   
+   
+   #actionHeader , #managerApproval{
+   	width: 120px;
+   }
+   
+  	#remarksHeader{
+  		width: 130px;
+  	}
+    
+    #finTeamRemarks{
+    	width: 100%;
+    }
+    
+    
+   
+    #finaceApprovalDropdown {
+  /* Styling the select box */
+  width: 110px; /* Adjust width as needed */
+  padding: 4px;
+  border: 1px solid black;
+ /*  border-radius: 5px; */
+  font-size: 16px;
+  background-color:white; /* Background color */
+  color:black;
+ /*  appearance: none; */ /* Remove default arrow icon in some browsers */
+}
+
+/* Styling the options within the select box */
+#finaceApprovalDropdown option {
+  background-color: #fff; /* Background color */
+  color: #333; /* Text color */
+}
+
+/* Styling when the select box is focused */
+#finaceApprovalDropdown:focus {
+  outline: none; /* Remove default focus outline */
+ /*  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); */ /* Add a shadow when focused */
+}
+
+/* Styling for when an option is hovered */
+#finaceApprovalDropdown option:hover {
+  background-color: #e0e0e0; /* Background color */
+  cursor: pointer;
+}
+    
+ .buttonContainer {
+    text-align: right;
+    padding: 0;
+   margin: 0 18px 2px 0;
+}
+    
+.button {
+        padding: 10px;
+        background-color:#cdc1ff;  
+        color:black;
+        border: none;
+        cursor: pointer;
+        font-weight: 600;
+    }
+    
+    /* Caption of Modal Image (optional) */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+/* The Close Button */
+/* .close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+} */
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% image width on small screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+        
+        
+        
+        
+        
+/* ====================================         */
+   .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+    }
+ 
+    /* Modal content */
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        background-color: #fefefe;
+        padding: 20px;
+        border-radius: 8px;
+        position: relative;
+    }
+ 
+    /* Close button */
+     .closee {
+        color: red;
+        padding: 0 10px;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+         right: 20px; 
+         margin-right: 10px;
+         background-color: white;
+    }
+    
+     .closee:hover{
+     	 cursor: pointer;
+     }
+    
+    #myModal {
+    /* Other modal styles */
+    z-index: 9999; /* Ensure the modal appears in front */
+}
+ 
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+ 
+    /* Image */
+    .modal-content img {
+        width: 100%;
+        height: auto;
+    }
+    
+    .dateValidationContainer #amountValidation{
+    	text-align: right;
+    }
+    
+    /* Make table header sticky */
+        .financeContainer table thead {
+            position: sticky;
+            top: 0;
+            /* z-index: 600; */ /* Ensure it's above other table content */
+            background-color: #fff; /* Match your table background color */
+        }
+    
+#hoverText {
+  display: none;
+  position: absolute;
+  background-color: white; 
+  padding: 3px;
+  border-radius: 5px;
+  z-index: 1;
+  font-size: 12px;
+  white-space: nowrap; /* Ensure text does not wrap */
+}
+
+.resetButtonContainer {
+  position: relative; /* Ensure relative positioning for absolute positioning within */
+}
+
+#resetButton:hover + #hoverText {
+  display: inline-block; /* Display horizontally */
+}
+
+#hoverText {
+  top: -35px; /* Adjusted to position 5px above the button */
+  left: 0; /* Adjust this as needed */
+}
+
+/* Make the table header fixed */
+table.table thead.fix {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #ffffff; /* Background color for the fixed header */
+}
+
+/* Make the table body scrollable */
+.financeContainer {
+    max-height: 500px; /* Adjust this value as needed */
+    overflow-y: auto;
+     overflow-x: auto;
+  
+}
+
+/* Ensure the table layout remains fixed */
+.financeContainer table {
+    table-layout: fixed;
+}
+
+/* successContainer */
+.successContainer{
+	height: 20px;
+}
+
+
+
+
+
+    .buttonContainer {
+    display: flex;
+    text-align: right;
+    padding: 0;
+    margin: 0 18px 2px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.a_background{
+	padding: 5px;
+}
+
+.buttonContainerTop{
+	margin-bottom: 20px;
+	margin-top: 2px;
+	/*  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.buttonContainerDown{
+	margin-top: 10px;
+	 /* box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1); */
+	
+}

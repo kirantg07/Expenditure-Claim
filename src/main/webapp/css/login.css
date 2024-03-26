@@ -1,0 +1,103 @@
+@import
+	url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap')
+	;
+
+* {
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	/* font-family: Arial, sans-serif; */
+	background-color: #f4f4f4;
+	margin: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	position: relative;
+	background: url('/ExpenditureReimburse/assets/images/BG.jpeg') no-repeat
+		center center fixed;
+	background-size: cover;
+}
+
+form {
+	background-color: #fff;
+	/* padding: 20px; */
+	/* Add padding to create space inside the form */
+	border-radius: 10px; /* Apply border-radius to the form */
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+	width: 100%; /* Remove fixed width */
+}
+
+i {
+	font-size: 50px;
+	color: white;
+}
+
+.iconBorder {
+	margin: 5px 0 10px 120px;
+	display: inline-block;
+	border-radius: 50%;
+	border: 2px solid black;
+	padding: 20px;
+	background-color: black;
+}
+
+label {
+	display: block;
+	margin-bottom: 8px;
+	font-weight: 600;
+}
+
+input {
+	width: 100%;
+	padding: 8px;
+	margin-bottom: 16px;
+	box-sizing: border-box;
+}
+
+button {
+	/* background-color: #4caf50; */
+	background-color: #115497;
+	color: #fff;
+	padding: 10px;
+	border: none;
+	border-radius: 3px;
+	cursor: pointer;
+	width: 100%;
+	border: 2px solid #115497;
+	font-size: medium;
+}
+
+button:hover {
+	color: #115497;
+	border: 2px solid #115497;
+	background-color: #fff;
+}
+
+form p {
+	margin: 0;
+	padding: 15px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+	/* background-color:  #4caf50; */
+	background-color: #115497;
+	color: white;
+}
+
+.innerContainer {
+	padding: 20px;
+}
+
+.registerSection {
+	margin-top: 15px;
+}
+
+.registerSection a {
+	text-decoration: none;
+	/* color: #45a049; */
+	color: #135faa;
+}

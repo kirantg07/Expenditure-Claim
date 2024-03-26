@@ -1,0 +1,548 @@
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    *{
+   box-sizing: border-box; 
+    font-family:Poppins, Arial, Helvetica, sans-serif;
+	} 
+
+body{
+	padding: 0;
+	margin: 0;
+	
+}
+tr:nth-child(even) {
+    background-color:#eeeafa
+    
+}
+ 
+tr:nth-child(odd) {
+    background-color: #ffffff;  
+}
+
+#slHeader, #slNo{
+	width: 40px;
+}
+
+#particularsHeader, #particulars{
+	width: 175px;
+}
+
+#billNoHeader , #bno{
+	text-align: right;
+	width: 60px;
+}
+
+#billDateHeader, #billDate ,#ClaimedDateHeader, #claimedDate, #ReclaimedDateHeader, #reclaimedDate, #settledDateHeader, #settledDate{
+	width: 110px;
+}
+
+#ClaimedAmountHeader, #amount {
+	width: 75px;
+	text-align: right !important;
+}
+ #approvedAmountHeader, #approvedAmount{
+	width: 90px;
+	text-align: right !important;
+}
+
+#viewBillHeader, #viewBill{
+	width: 75px;
+	
+}
+
+ #viewBill{
+ 	color: blue;
+ }
+ 
+ #managerRemarks, #managerRemarksHeader{
+ 	width: 180px;
+ }
+ 
+ #finTeamRemarksHeader, #finTeamRemarks{
+ 	width: 180px;
+ }
+ #statusHeader{
+ 	width: 100px;
+ }
+  #actionHeader{
+ 	width: 70px;
+ } 
+ 
+ 
+ .dateCss{
+ 	font-weight: 500;
+ }
+ 
+ .dateInput{
+ 	margin-right: 20px;
+ 	font-weight: 500;
+ }
+ 
+ .dateSelect{
+ 	padding: 2px;
+ }
+ 
+ .inputButton{
+ 	color: black;  
+ 	background-color:  #cdc1ff;  
+ 	cursor: pointer;
+ 	padding: 2px 5px;
+ 	width: 60px;
+ 	margin-left: 0px;
+ }
+ 
+ .successContainer{
+	height: 20px;
+}
+ 
+#editSl{
+	width: 100px;
+}
+
+
+#editParticulars{
+	width: 320px;
+}
+
+
+#editBillNo{
+	width: 200px;
+}
+
+#editBillDate{
+	width: 220px;
+}
+
+#editAmount{
+	width: 200px;
+}
+
+#editViewBill{
+	width: 200px;
+}
+
+#amo{
+	text-align: right;
+}
+
+#bNo{
+	text-align: right;
+}
+
+.buttonE {
+	padding: 7px 20px;
+	background-color:  #cdc1ff;  
+	color: black;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	margin-left: 20px;
+	font-weight: 600;
+	font-size: medium;
+}
+
+.button {
+	padding: 7px 20px;
+	background-color: #cdc1ff;  
+	color: black;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+	margin-left: 20px;
+	font-weight: 600;
+	font-size: medium;
+}
+
+.button:hover {
+	/* background-color: #2980b9; */
+	color: white;
+}
+/* #editButtonContainer{
+	
+	 display: flex; 
+	 align-items: center; 
+	 text-align: center; 
+	 justify-content: center; 
+	border: 0px;
+} */
+
+#editButton{
+	background-color:#a594f9; 
+	color: white;
+	padding: 3px 7px; 
+}
+
+#editButton:hover{
+	cursor: pointer;
+}
+
+
+/* Caption of Modal Image (optional) */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-content, #caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% image width on small screens */
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+        
+        
+        
+        
+        
+/* ====================================         */
+   .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+        justify-content: center; /* Center horizontally */
+        align-items: center; /* Center vertically */
+    }
+ 
+    /* Modal content */
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%;
+        max-width: 700px;
+        background-color: #fefefe;
+        padding: 20px;
+        border-radius: 8px;
+        position: relative;
+    }
+ 
+    /* Close button */
+    .closee {
+        color: red;
+        padding: 0 10px;
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+         right: 20px; 
+         margin-right: 10px;
+         background-color: white;
+    }
+    
+     .closee:hover{
+     	 cursor: pointer;
+     }
+    
+    #myModal {
+    /* Other modal styles */
+    z-index: 9999; /* Ensure the modal appears in front */
+}
+ 
+    .close:hover,
+    .close:focus {
+        color: #000;
+        text-decoration: none;
+        cursor: pointer;
+    }
+ 
+    /* Image */
+    .modal-content img {
+        width: 100%;
+        height: auto;
+    }
+    
+ #resetButtonContainer{
+ 	/* position: relative; */
+ }
+ 
+    #hoverText {
+  display: none;
+  position: absolute;
+	 top: 37px; 
+  left: 750px; 
+  background-color: white; 
+  padding: 3px;
+  /* border: 1px solid #000; */
+  border-radius: 5px;
+  z-index: 1;
+  font-size: 12px;
+}
+
+#resetButton:hover + #hoverText {
+  display: block;
+}
+
+
+
+/* tool tip styling */
+  .toolTipcontainer {
+            position: relative;
+            /* z-index: 5; */
+            /* display: inline-block; */
+        }
+
+        #tooltipTrigger {
+            /* margin-top: 20px; */ /* Adjust the margin as needed */
+            /* margin-left: 900px; */
+            color: #007bff; 
+          
+            cursor: pointer; /* Change cursor to pointer on hover */
+        }
+
+        .tooltip {
+            visibility: hidden;
+          /*   background-color:  #ecf0f1; */
+            background-color:  #f5e97e;
+         /*    background-color: #f4eba1;  */
+            border-radius: 4px;
+            padding: 10px;
+            position: absolute;
+            top: 110%; /* Position the tooltip just below the trigger element */
+            /* left: 50%;  */
+            /* right:10%; */
+            right: -40px;
+           /*  transform: translateX(-50%); */
+            width: 600px; /* Set the width according to your requirement */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            line-height: 1.5;
+            z-index: 1;
+        }
+
+        .tooltip.active {
+            visibility: visible;
+        }
+
+        .highlight {
+          display: inline-block; /* Convert to block-level element */
+          width: 110px !important; /* Set width */
+         /*  font-weight: 600; */
+          color: black; /* Set color for highlight text */
+            
+        }
+
+        .description {
+            margin-left: 10px; /* Add margin between highlight and description */
+            color: black;
+            font-weight: 400;
+        }
+        
+        /* Make the table header fixed */
+table#table thead.fix {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: #ffffff; /* Background color for the fixed header */
+}
+
+/* Make the table body scrollable */
+.container {
+    height: 620px; /* Adjust this value as needed */
+    overflow-y: auto;
+  
+}
+
+/* Ensure the table layout remains fixed */
+.container table {
+    table-layout: fixed;
+}
+
+
+/* //================================================== */
+/* Style for the edit form */
+#editForm {
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh; /* 30% of the viewport height */
+	background-color: #fff;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	z-index: 2;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+
+
+/* Style for the edit form */
+
+/* Style for the close button */
+#closeButton {
+	position: absolute;
+	top: 2px;
+	right: 20px;
+	background-color: #ff5722;
+	color: #fff;
+	border: none;
+	padding: 7px 5px;
+	font-size: 16px;
+	cursor: pointer;
+	border-radius: 5px;
+	transition: 0.3s ease-in-out;
+}
+
+#closeButton:hover {
+	background-color: #d84315;
+}
+
+/*new styling ============================  */
+/* Table styling */
+#expenseTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#expenseTable th,
+#expenseTable td {
+    padding: 12px;
+    text-align: center;
+    border: 1px solid black; /* Set border thickness and color */
+}
+
+#expenseTable th {
+    background-color:  #cdc1ff;  
+    color: #fff; /* White Text */
+}
+
+#expenseTable tr:hover {
+    background-color: #ecf0f1; /* Light Gray Hover Background */
+}
+
+/* Edit Form Table */
+#editTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#editTable th,
+#editTable td {
+    padding: 7px;
+    text-align: center;
+    border: 1px solid black;
+}
+
+#editTable th {
+    background-color: #cdc1ff;  
+    color: black;
+}
+
+#editTable tr:hover {
+    background-color: #ecf0f1; /* Light Gray Hover Background */
+}
+
+/* Form input fields */
+#editTable input[type="text"],
+#editTable input[type="date"],
+#editTable textarea,
+#editTable select,
+#editTable input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#editTable textarea {
+    resize: vertical;
+}
+
+/*=====================================  */
+/* Table styling */
+
+
+
+#table tr:hover {
+    background-color: #ecf0f1; /* Light Gray Hover Background */
+}
+
+/* Form input fields */
+#table input[type="text"],
+#table input[type="date"],
+#table textarea,
+#table select,
+#table input[type="file"] {
+    width: 100%;
+    padding: 2px;
+    box-sizing: border-box;
+    border: 1px solid #bdc3c7; /* Light Gray Border */
+    border-radius: 5px;
+}
+
+td{
+	font-size: 14px;
+	/* padding: 5px; */
+}
+#table textarea {
+    resize: vertical;
+}
+
+
+
+.dateValidationContainer{
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.greyBackground {
+ 
+   
+    background-color: #e0e0e0; /* Grey background color for readonly fields */
+    border: 1px solid transparent; /* Hide the border for readonly fields */
+    cursor: default; /* Set cursor to default for readonly fields */
+    border: none;
+    border: none;
+     
+}
+.greyBackground:focus{
+	outline: none; /* Remove outline on focus for readonly fields */
+}
+
+input[readonly]:focus {
+    outline: none; /* Remove outline on focus for readonly fields */
+}
+
+#table td#amount,
+#table td#bno,
+#table th#amount,
+#table th#bno {
+    text-align: right;
+}

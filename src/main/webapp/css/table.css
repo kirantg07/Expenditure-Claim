@@ -1,0 +1,78 @@
+
+#table {
+    width: 100%;
+    border-collapse: collapse;
+  /*   margin-top: 20px; */
+    border: 1px solid a594f9;
+}
+
+#table th,
+#table td {
+    padding: 7px;
+   text-align: left;
+   border: 1px solid black; /* Set border thickness and color */
+ 
+   
+}
+
+ #table th {
+ 
+	background-color: #cdc1ff;  
+    /* color: #fff; */
+} 
+
+#table tr:hover {
+    background-color: #ecf0f1; /* Light Gray Hover Background */
+}
+
+/* Form input fields */
+#table input[type="text"],
+#table input[type="date"],
+#table textarea,
+#table select,
+#table input[type="file"] {
+    width: 100%;
+    padding: 2px;
+    box-sizing: border-box;
+    border: 1px solid #bdc3c7; /* Light Gray Border */
+    border-radius: 5px;
+}
+
+td{
+	font-size: 14px;
+	/* padding: 5px; */
+}
+#table textarea {
+    resize: vertical;
+}
+
+.buttonContainer{
+	float: right;
+	margin-top: 10px;
+}
+
+.buttonContainer button{
+	mrgin-left: 10px;
+	padding: 10p 15pxx;
+	cursor: pointer;
+}
+
+.dateValidationContainer{
+	margin-top: 10px
+}
+
+.greyBackground {
+    background-color: #f2f2f2; /* Grey Background */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Darker Grey Shadow */
+}
+
+#table td#amount,
+#table td#bno,
+#table th#amount,
+#table th#bno {
+    text-align: right;
+}
+
+#editSl{
+	width: 40px;
+}
